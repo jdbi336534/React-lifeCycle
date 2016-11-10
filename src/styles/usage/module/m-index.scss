@@ -1,0 +1,45 @@
+@import '../../lib/element/yo-btn';
+@import '../../lib/fragment/yo-list';
+
+@include yo-list(
+  $name: a,
+  $border-width: 0,
+  $item-padding: .1rem 0,
+  $item-border-color: #fff
+) {
+  input {
+    height: .35rem;
+    font-size: .14rem;
+  }
+  textarea {
+    height: 1rem;
+    font-size: .14rem;
+  }
+}
+
+body {
+  background: #fff;
+}
+
+.m-index {
+  padding: 10px;
+  h1 {
+    height: .44rem;
+    font-size: .16rem;
+    text-align: left;
+    line-height: .44rem;
+    @include border(0 0 1px 0);
+  }
+  .comment {
+    padding: .1rem;
+    span:first-of-type {
+      padding-right: .1rem;
+    }
+    span:last-of-type {
+      color: #999;
+    }
+    div {
+      color: blue;
+    }
+  }
+}
